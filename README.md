@@ -176,3 +176,17 @@ This repository serves as both a learning log and a growing reference guide, ref
 <p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
 
 ---
+## 10. Advanced Operations
+
+| Command | My Definition / Logic | Flag / Example | Flag Definition |
+|---|---|---|---|
+| `git cherry-pick` | duplicate a commit from one branch to another. | `git cherry-pick <commit_hash>` | apply a specific commit to the current branch. |
+| `git bisect` | find the commit that introduced a bug using binary search. | `git bisect start` | start the bisect process. |
+|  |  | `git bisect good` | mark a commit as good (no bug). |
+|  |  | `git bisect bad` | mark a commit as bad (contains bug). |
+|  |  | `git bisect log` | show the bisect process log. |
+|  |  | `git bisect reset` | exit bisect mode and return to original state. |
+
+<p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
+
+---
