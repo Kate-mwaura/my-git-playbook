@@ -190,3 +190,15 @@ This repository serves as both a learning log and a growing reference guide, ref
 <p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
 
 ---
+## 11. Submodules
+
+| Command | My Definition / Logic | Flag / Example | Flag Definition |
+|---|---|---|---|
+| `git submodule add` | add a dependent repository inside the current repository as a submodule. | `git submodule add <repo_url> <path>` | add a submodule to a specific directory in the project. |
+| `git submodule update` | update the submodule to match the recorded commit in the main repository. | `git submodule update --init` | initialize and update submodules. |
+|  |  | `git submodule update --init --recursive` | initialize and update submodules including nested ones. |
+| `git clone` | clone a repository together with its submodules. | `git clone <repo_url> --recurse-submodules` | clone repository and all its submodules. |
+
+<p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
+
+---
