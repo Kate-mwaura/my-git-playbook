@@ -114,3 +114,22 @@ This repository serves as both a learning log and a growing reference guide, ref
 <p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
 
 ---
+## 6. Remote Operations
+
+| Command | My Definition / Logic | Flag / Example | Flag Definition |
+|---|---|---|---|
+| `git push` | moving the saved changes from the local repository to the remote repository. | `git push` | push changes to the default remote branch. |
+|  |  | `git push origin <branch_name>` | push to a specific branch in the remote repository. |
+|  |  | `git push --force` | force push changes to remote repository and ignore conflicts. |
+|  |  | `git push origin <branch_name> --force-with-lease` | safely force push without overwriting changes from others. |
+|  |  | `git push -d origin <branch_name>` | delete a branch from the remote repository. |
+| `git pull` | move the changes from remote repository to local repository to keep both in sync. | `git pull` | fetch and merge changes from remote. |
+|  |  | `git pull origin <branch_name>` | pull changes from a specific remote branch. |
+|  |  | `git pull --rebase` | pull changes and rebase instead of merge. |
+|  |  | `git pull -r` | shorthand for pull with rebase. |
+| `git fetch` | update remote/branch without changing the code on the local repository. | `git fetch` | download changes from remote without merging. |
+|  |  | `git fetch origin` | fetch updates from a specific remote. |
+
+<p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
+
+---
