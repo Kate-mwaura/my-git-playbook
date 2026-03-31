@@ -36,7 +36,7 @@ This repository serves as both a learning log and a growing reference guide, ref
 |  |  | `git config --global user.email "your_email"` | set global email for commits. |
 | `git config --local` | setting configurations for only the specific project you're working in. | `git config --local user.name "your_name"` | set username for current repository only. |
 |  |  | `git config --local user.email "your_email"` | set email for current repository only. |
-<p align="right"><a href="#kathys-linux-command-reference-for-devops">⬆ Back to Top</a></p>
+<p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
 
 ---
 
@@ -51,6 +51,29 @@ This repository serves as both a learning log and a growing reference guide, ref
 | `git commit --amend` | combine the current change with the last commit at HEAD. | `git commit --amend` | modify the most recent commit. |
 |  |  | `git commit --amend -m "new message"` | update the last commit message. |
 
-<p align="right"><a href="#kathys-linux-command-reference-for-devops">⬆ Back to Top</a></p>
+<p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
+
+---
+## 3. Viewing History
+
+| Command | My Definition / Logic | Flag / Example | Flag Definition |
+|---|---|---|---|
+| `git status` | show the current state of a branch, unstaged, uncommitted and unpushed changes. | `git status` | display the current working directory and staging area status. |
+| `git log` | show the commit history of saved changes (commits). | `git log` | display full commit history. |
+|  |  | `git log --oneline` | squeeze log output into one line per commit. |
+|  |  | `git log -p` | show commit history and changes made to each commit. |
+|  |  | `git log -p <commit1>..<commit2>` | show differences between two commits. |
+|  |  | `git log -no` | show the the specified no of commits. |
+|  |  | `git log --after="Y-M-D"` | show commits after a specific date. |
+|  |  | `git log --before="Y-M-D"` | show commits before a specific date. |
+|  |  | `git log --author="name"` | search commits made by a specific user. |
+|  |  | `git log --grep="pattern"` | search commits with a specific message pattern. |
+|  |  | `git log -- <file_name>` | show history of a specific file. |
+|  |  | `git log <remote/branch>..<local_branch> --oneline` | show commits in local branch not in remote branch. |
+| `git show` | show the changes applied in specific commits. | `git show <commit_hash>` | display details of a specific commit. |
+|  |  | `git show <hash1> <hash2>` | show changes from multiple commits. |
+| `git reflog` | show entire history including deleted or changed commits. | `git reflog` | track all HEAD changes and recover lost commits. |
+
+<p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
 
 ---
