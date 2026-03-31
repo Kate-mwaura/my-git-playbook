@@ -159,3 +159,20 @@ This repository serves as both a learning log and a growing reference guide, ref
 <p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
 
 ---
+## 9. Stashing
+
+| Command | My Definition / Logic | Flag / Example | Flag Definition |
+|---|---|---|---|
+| `git stash` | save the current work in progress in an archive and clean the working directory. | `git stash` | stash current changes. |
+|  |  | `git stash -u` | stash tracked and untracked files. |
+|  |  | `git stash -u -m "message"` | stash changes with a message. |
+|  |  | `git stash list` | display all saved stashes. |
+|  |  | `git stash pop` | apply latest stash and delete it from list. |
+|  |  | `git stash apply` | apply stash without removing it. |
+|  |  | `git stash drop stash@{2}` | delete a specific stash entry. |
+|  |  | `git stash clear` | remove all stashes. |
+|  |  | `git stash branch <branch_name>` | create a branch from stash and apply changes. |
+
+<p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
+
+---
