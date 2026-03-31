@@ -145,3 +145,17 @@ This repository serves as both a learning log and a growing reference guide, ref
 <p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
 
 ---
+## 8. Undoing Changes
+
+| Command | My Definition / Logic | Flag / Example | Flag Definition |
+|---|---|---|---|
+| `git revert` | undo changes from a commit and write a new commit. | `git revert <commit_hash>` | create a new commit that reverses the changes of a previous commit. |
+| `git reset` | moves back to a specific commit in history. | `git reset <commit_hash>` | move HEAD to the specified commit. |
+|  |  | `git reset --soft <commit_hash>` | move back to the specified commit but keep changes staged. |
+|  |  | `git reset --hard <commit_hash>` | move back to the specified commit and discard all changes permanently. |
+|  |  | `git reset HEAD~<n>` | undo the last n commits from current HEAD. |
+| `git reflog` | shows you the history of your actions. It doesn't matter if you committed, checked out a branch, did a hard reset, or even if you made a mistake—the reflog remembers it for about 30–90 days. | `git reflog` | track all changes to HEAD and recover lost commits. |
+
+<p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
+
+---
