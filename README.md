@@ -77,3 +77,22 @@ This repository serves as both a learning log and a growing reference guide, ref
 <p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
 
 ---
+## 4. Branching & Navigation
+
+| Command | My Definition / Logic | Flag / Example | Flag Definition |
+|---|---|---|---|
+| `git branch` | creating a duplicate copy of the main source code to a new working area to make changes and tests without affecting the main working area directly. | `git branch` | list all local branches. |
+|  |  | `git branch -a` | show all branches from both local and remote repositories. |
+|  |  | `git branch -vv` | show local branches and their tracking remote branches. |
+|  |  | `git branch <branch_name>` | create a new branch. |
+|  |  | `git branch -m <old_name> <new_name>` | rename a branch in local repo. |
+|  |  | `git branch -d <branch_name>` | delete a branch from local repository. |
+|  |  | `git branch <branch_name> <commit_hash>` | create a branch from a specific commit. |
+|  |  | `git push origin --delete/-d <branch_name>` | deleting a remote branch from the local branch (cli). |
+|  |  | ` git push origin :<old_name> <new_name>` | renaming a remote branch from the local branch (cli). N:B ensure you 1st rename the local branch |
+| `git checkout` | move from current branch to a specific branch. | `git checkout <branch_name>` | switch to an existing branch. |
+|  |  | `git checkout -b <branch_name>` | create a new branch and switch to it. |
+
+<p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
+
+---
