@@ -37,4 +37,20 @@ This repository serves as both a learning log and a growing reference guide, ref
 | `git config --local` | setting configurations for only the specific project you're working in. | `git config --local user.name "your_name"` | set username for current repository only. |
 |  |  | `git config --local user.email "your_email"` | set email for current repository only. |
 <p align="right"><a href="#kathys-linux-command-reference-for-devops">⬆ Back to Top</a></p>
+
+---
+
+## 2. Staging & Committing
+
+| Command | My Definition / Logic | Flag / Example | Flag Definition |
+|---|---|---|---|
+| `git add` | adding a change to the staging area. | `git add .` | add all changes in the current directory to staging area. |
+|  |  | `git add <file_name>` | add a specific file to staging area. |
+| `git restore --staged` | unstaging a file from the staging area. | `git restore --staged <file_name>` | remove a file from staging area but keep changes in working directory. |
+| `git commit` | saving a change from the staging area to saved changes. | `git commit -m "commit message"` | commit staged changes with a message. |
+| `git commit --amend` | combine the current change with the last commit at HEAD. | `git commit --amend` | modify the most recent commit. |
+|  |  | `git commit --amend -m "new message"` | update the last commit message. |
+
+<p align="right"><a href="#kathys-linux-command-reference-for-devops">⬆ Back to Top</a></p>
+
 ---
