@@ -133,3 +133,15 @@ This repository serves as both a learning log and a growing reference guide, ref
 <p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
 
 ---
+## 7. Merging & Rebasing
+
+| Command | My Definition / Logic | Flag / Example | Flag Definition |
+|---|---|---|---|
+| `git merge` | combine changes from different branches into the current branch. | `git merge <branch_name>` | merge the specified branch into the current branch. |
+| `git rebase` | combine changes from different branches and arrange commits in an orderly and sequential manner. | `git rebase <branch_name>` | rebase current branch onto another branch. |
+|  |  | `git rebase -i` | interactively structure and edit commit history. |
+|  |  | `git pull --rebase` | pull changes and rebase instead of merging. |
+
+<p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
+
+---
