@@ -92,6 +92,24 @@ This repository serves as both a learning log and a growing reference guide, ref
 |  |  | ` git push origin :<old_name> <new_name>` | renaming a remote branch from the local branch (cli). N:B ensure you 1st rename the local branch |
 | `git checkout` | move from current branch to a specific branch. | `git checkout <branch_name>` | switch to an existing branch. |
 |  |  | `git checkout -b <branch_name>` | create a new branch and switch to it. |
+| `git switch` | move from current branch to a specific branch (modern alternative to checkout). | `git switch <branch_name>` | switch to an existing branch. |
+|  |  | `git switch -c <branch_name>` | create a new branch and switch to it. |
+|  |  | `git switch -` | switch back to the previous branch. |
+
+<p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
+
+---
+## 5. Comparing Changes
+
+| Command | My Definition / Logic | Flag / Example | Flag Definition |
+|---|---|---|---|
+| `git diff` | show the difference between files, commits, repositories, branches or code. | `git diff` | show unstaged changes in the working directory. |
+|  |  | `git diff --staged` | show staged changes ready to be committed. |
+|  |  | `git diff <commit1> <commit2>` | show differences between two commits. |
+|  |  | `git diff <local_branch>..<remote/branch>` | show the difference between local and remote branches. |
+|  |  | `git diff <remote/branch>` | show the difference between current branch and a remote branch. |
+|  |  | `git diff <remote/branch> -- <file_path>` | show difference for a specific file between local and remote. |
+|  |  | `git diff --stat` | show a summarized output of changes. |
 
 <p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
 
