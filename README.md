@@ -88,8 +88,8 @@ This repository serves as both a learning log and a growing reference guide, ref
 |  |  | `git branch -m <old_name> <new_name>` | rename a branch in local repo. |
 |  |  | `git branch -d <branch_name>` | delete a branch from local repository. |
 |  |  | `git branch <branch_name> <commit_hash>` | create a branch from a specific commit. |
-|  |  | `git push origin --delete/-d <branch_name>` | deleting a remote branch from the local branch (cli). |
-|  |  | ` git push origin :<old_name> <new_name>` | renaming a remote branch from the local branch (cli). N:B ensure you 1st rename the local branch |
+|  |  | `git push origin --delete/-d <branch_name>` | deleting a remote branch . |
+|  |  | ` git push origin :<old_name> <new_name>` | renaming a remote branch. N:B ensure you 1st rename the local branch. |
 | `git checkout` | move from current branch to a specific branch. | `git checkout <branch_name>` | switch to an existing branch. |
 |  |  | `git checkout -b <branch_name>` | create a new branch and switch to it. |
 | `git switch` | move from current branch to a specific branch (modern alternative to checkout). | `git switch <branch_name>` | switch to an existing branch. |
@@ -198,6 +198,18 @@ This repository serves as both a learning log and a growing reference guide, ref
 | `git submodule update` | update the submodule to match the recorded commit in the main repository. | `git submodule update --init` | initialize and update submodules. |
 |  |  | `git submodule update --init --recursive` | initialize and update submodules including nested ones. |
 | `git clone` | clone a repository together with its submodules. | `git clone <repo_url> --recurse-submodules` | clone repository and all its submodules. |
+
+<p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
+
+---
+## 12. Cleanup & Maintenance
+
+| Command | My Definition / Logic | Flag / Example | Flag Definition |
+|---|---|---|---|
+| `git rm --cached` | remove a file or folder from the repository but keep it in the local repo. | `git rm -r --cached <folder_name>` | remove a folder from the repository without deleting it locally. |
+| `git push` |  | `git push origin :<branch_name>` | delete a branch from the remote repository. |
+| `git branch -d` | delete a branch from local repository. | `git branch -d <branch_name>` | safely delete a local branch. |
+|  |  | `git branch -D <branch_name>` | force delete a local branch. |
 
 <p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
 
