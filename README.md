@@ -150,7 +150,7 @@ This repository serves as both a learning log and a growing reference guide, ref
 | Command | My Definition / Logic | Flag / Example | Flag Definition |
 |---|---|---|---|
 | `git revert` | undo changes from a commit and write a new commit. | `git revert <commit_hash>` | create a new commit that reverses the changes of a previous commit. |
-| `git reset` | moves back to a specific commit in history. | `git reset <commit_hash>` | move HEAD to the specified commit. |
+| `git reset or git reset --mixed` | moves back to a specific commit in history and unstages changes. | `git reset <commit_hash>` | move HEAD to the specified commit. |
 |  |  | `git reset --soft <commit_hash>` | move back to the specified commit but keep changes staged. |
 |  |  | `git reset --hard <commit_hash>` | move back to the specified commit and discard all changes permanently. |
 |  |  | `git reset HEAD~<n>` | undo the last n commits from current HEAD. |
