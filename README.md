@@ -110,6 +110,8 @@ This repository serves as both a learning log and a growing reference guide, ref
 |  |  | `git diff <remote/branch>` | show the difference between current branch and a remote branch. |
 |  |  | `git diff <remote/branch> -- <file_path>` | show difference for a specific file between local and remote. |
 |  |  | `git diff --stat` | show a summarized output of changes. |
+|  |  | `git diff -r [hash]` | show changes made in a commit. |
+
 
 <p align="right"><a href="#git-command-reference-for-devops--developers">⬆ Back to Top</a></p>
 
